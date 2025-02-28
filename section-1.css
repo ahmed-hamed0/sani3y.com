@@ -1,0 +1,109 @@
+.hero-section {
+    position: relative;
+    height: 100vh; /* ارتفاع كامل الشاشة */
+    background: url(contactors.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* طبقة شفافة لتوضيح النص */
+    padding: 100px; /* Reduced padding for smaller screens */
+    border-radius: 10px;
+    width: 90%; /* Ensure overlay doesn't overflow on smaller screens */
+    max-width: 800px; /* Limit maximum width for larger screens */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.client-btn {
+    background-color: #20B2AA;
+    color: white;
+}
+
+.client-btn:hover {
+    background-color: #1A8F85;
+}
+
+.worker-btn {
+    background-color: #FF6347;
+    color: white;
+}
+
+.worker-btn:hover {
+    background-color: #E5533D;
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 1024px) {
+    .overlay {
+        padding: 80px; /* Reduce padding for tablets */
+    }
+
+    h2 {
+        font-size: 24px; /* Slightly smaller font size */
+    }
+
+    .btn {
+        padding: 12px 25px; /* Smaller button padding */
+        font-size: 18px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        padding: 50px; /* Further reduce padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .btn-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px; /* Reduce gap between buttons */
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons */
+        padding: 15px; /* Consistent padding */
+        font-size: 16px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        padding: 30px; /* Minimal padding for very small screens */
+    }
+
+    h2 {
+        font-size: 18px; /* Smaller font size for very small screens */
+    }
+
+    .btn {
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
+}
